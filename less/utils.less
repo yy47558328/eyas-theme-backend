@@ -1,0 +1,85 @@
+/**
+ * 封装了图片载入样式.
+ * @type {[type]}
+ */
+.background-image(@fileName, @repeat:no-repeat)
+{
+    background-image: url('@{image-dir}@{fileName}');
+    .background-repeat(@repeat)
+}
+
+/**
+ * 封装了主题图片载入样式.
+ * @type {[type]}
+ */
+.theme-background-image(@fileName, @repeat:no-repeat)
+{
+    background-image: url('@{image-dir}@{theme-dir}@{fileName}');
+    .background-repeat(@repeat)
+}
+
+
+.theme-background-sprite(@repeat:no-repeat)
+{
+	.theme-background-image('sprite.png',@repeat:no-repeat);
+}
+
+
+
+.background-position(@position)
+{
+	background-position: @position
+}
+
+.background-repeat(@repeat:no-repeat)
+{
+	background-repeat: @repeat
+}
+
+
+
+
+
+
+
+
+
+.transition(@transition) {
+  -webkit-transition: @transition;
+       -o-transition: @transition;
+          transition: @transition;
+}
+
+.transition-transform(@transition) {
+  -webkit-transition: -webkit-transform @transition;
+     -moz-transition: -moz-transform @transition;
+       -o-transition: -o-transform @transition;
+          transition: transform @transition;
+}
+
+.translate(@x; @y) {
+  -webkit-transform: translate(@x, @y);
+      -ms-transform: translate(@x, @y); // IE9 only
+       -o-transform: translate(@x, @y);
+          transform: translate(@x, @y);
+}
+
+
+.rotate(@degrees) {
+  -webkit-transform: rotate(@degrees);
+      -ms-transform: rotate(@degrees); // IE9 only
+       -o-transform: rotate(@degrees);
+          transform: rotate(@degrees);
+}
+.rotateX(@degrees) {
+  -webkit-transform: rotateX(@degrees);
+      -ms-transform: rotateX(@degrees); // IE9 only
+       -o-transform: rotateX(@degrees);
+          transform: rotateX(@degrees);
+}
+.rotateY(@degrees) {
+  -webkit-transform: rotateY(@degrees);
+      -ms-transform: rotateY(@degrees); // IE9 only
+       -o-transform: rotateY(@degrees);
+          transform: rotateY(@degrees);
+}

@@ -1,0 +1,55 @@
+.header
+{
+    background-color: @header-background-color;
+
+    >.logo-header
+	  {
+	     background-color: @main-nav-background-color;
+       
+        >a
+        {
+       	  .theme-background-image('logo-header.png')
+        }
+
+        &:hover
+        {
+          background-color: @header-background-color
+        }
+	  }
+
+
+
+    >.avatar
+    {
+        color: #FFFFFF;
+
+        >p
+        {
+           .theme-background-sprite;
+        }
+
+        &:hover
+        {
+           background-color: @main-nav-background-color
+        }
+    }
+
+
+
+    >.nav-switch
+    {
+        i
+        {
+           background-color: @nav-switch-background-color
+        }
+       
+
+       &:hover
+       {
+           i
+           {
+              background-color: @nav-switch-hover-background-color
+           }
+       }
+    }
+}
