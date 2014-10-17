@@ -1,27 +1,51 @@
 @import 'variables.less';
 @import 'utils.less';
 @import 'mixins/header.less';
-
+@import 'mixins/flank.less';
+@import 'mixins/navigat.less';
 
 
 
 /*******************************************************
- * variables
+ * global styles
  ******************************************************/
  /**
- * 主题目录
+ * directory of current theme
  * @type {String}
  */
 @theme-dir : 'theme-blue/';
 
 
-@header-background-color: #478FF1;
+/*****************************************************************************
+ * header styles
+ ****************************************************************************/
+
+/**
+ * header background-color
+ * @type {[type]}
+ */
+@header-bgColor: #478FF1;
+
+
+/*****************************************************************************
+ * header styles
+ ****************************************************************************/
+/**
+ * main navigat background-color
+ * @type {[type]}
+ */
+@flank-bgColor: #446BB1;
+
+
+/*****************************************************************************
+ * header navigat switch styles
+ ****************************************************************************/
+@nav-switch-bgColor: #C0DDF8;
+@nav-switch-hover-bgColor: #2C6ABE;
 
 
 
-
-@main-nav-background-color: #446BB1;
-
-
-@nav-switch-background-color: #C0DDF8;
-@nav-switch-hover-background-color: #2C6ABE;
+/*****************************************************************************
+ * navigat styles
+ ****************************************************************************/
+@navigat-active-bgColor: #293141;

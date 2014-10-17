@@ -1,6 +1,11 @@
 @import 'variables.less';
 @import 'utils.less';
+@import 'ghicon.less';
 @import 'components/header.less';
+@import 'components/body.less';
+@import 'components/flank.less';
+@import 'components/navigat.less';
+@import 'components/content.less';
 
 *{
 	margin: 0;
@@ -8,9 +13,16 @@
 	
 }
 
+html
+{
+	height: 100%;
+}
+
 
 body
 {
+	height: 100%;
+	overflow: hidden;
 	font-family: @font-family
 }
 
@@ -26,5 +38,4 @@ a
    display: inline-block;
    vertical-align: middle
 }
-
 
