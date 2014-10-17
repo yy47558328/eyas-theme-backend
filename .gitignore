@@ -1,1 +1,3 @@
-/css
+/script/compress
+/node_modules
+*.log
