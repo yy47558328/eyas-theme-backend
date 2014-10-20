@@ -7,6 +7,22 @@
    >.body-container
    {
       height: 100%;
-      position: relative
+      position: relative;
+      
+
+
+      &.nav-active-toggle
+      {
+      	  .navigat-active
+      	  {
+      	  	  left: auto;
+      	  	  right: @flank-width
+      	  }
+
+      	  .wapper-content
+      	  {
+      	  	  padding-left: @flank-width
+      	  }
+      }
    }
 }

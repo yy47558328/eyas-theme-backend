@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.4.0
+ # 添加了导航栏toggle切换样式JS.
+
 ## 1.3.0
  * 引入了jquery1.11.1文件.
  * 修复了.gitignore文件中不提交css文件夹的BUG.
